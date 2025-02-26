@@ -1,5 +1,5 @@
 local function import(file)
-    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/Laamy/SirhurtPatches/main/%s"):format(file)), file .. '.luau')()
+    return loadstring(game:HttpGet(`https://raw.githubusercontent.com/Laamy/SirhurtPatches/main/{file}.luau`))()
 end
 
 import("getrenv-patches")
